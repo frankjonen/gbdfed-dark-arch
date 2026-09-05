@@ -767,7 +767,7 @@ fontgrid_make_rgb_image(Fontgrid *fw, bdf_glyph_t *glyph)
                  * Look up the color.
                  */
                 switch (fw->bpp) {
-                  case 1: memset(pix, 0, 3); break;
+                  case 1: memset(pix, 230, 3); break;
                   case 2: memset(pix, fw->colors[byte-1], 3); break;
                   case 4: memset(pix, fw->colors[byte-1+4], 3); break;
                   case 8: memset(pix, byte, 3); break;
@@ -809,7 +809,7 @@ fontgrid_draw_encoding(GtkWidget *w, gint x, gint y, gchar *num,
 
     cairo_move_to(cr, (double)x - te.width / 2, (double)y + te.height / 2 - 0.5);
 
-    cairo_set_source_rgb(cr, 0.0, 0.0, 0.0);
+    cairo_set_source_rgb(cr, 0.90, 0.60, 0.20);
 
     cairo_show_text (cr, num);
 

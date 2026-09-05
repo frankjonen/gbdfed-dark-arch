@@ -79,10 +79,12 @@ struct _Glyphedit {
 
 #if GTK_CHECK_VERSION(3, 0, 0)
     GdkRGBA baselineColor;
+    GdkRGBA glyphColor;
     GdkRGBA selectionColor;
     GdkRGBA boundsColor;
 #else
     GdkColor baselineColor;
+    GdkColor glyphColor;
     GdkColor selectionColor;
     GdkColor boundsColor;
 #endif

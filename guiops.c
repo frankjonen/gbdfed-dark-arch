@@ -189,7 +189,7 @@ ops_dialog_setup(gbdfed_editor_t *ed)
                          GTK_FILL, 5, 5);
         ops_dy = gtk_widget_new(gtk_entry_get_type(),
                                 "max_length", 6, NULL);
-        (void) g_signal_connect(G_OBJECT(ops_dx), "changed",
+        (void) g_signal_connect(G_OBJECT(ops_dy), "changed",
                                 G_CALLBACK(enable_apply),
                                 GINT_TO_POINTER(0));
         gtk_table_attach(GTK_TABLE(table), ops_dy, 1, 2, 1, 2, GTK_FILL,

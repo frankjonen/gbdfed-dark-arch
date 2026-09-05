@@ -25,7 +25,7 @@
 static const gchar *copy_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "..............  ",
 ".            .  ",
 ". ..............",
@@ -47,7 +47,7 @@ static const gchar *copy_xpm[] = {
 static const gchar *dleft_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "        .       ",
@@ -69,7 +69,7 @@ static const gchar *dleft_xpm[] = {
 static const gchar *down_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "     ......     ",
@@ -91,7 +91,7 @@ static const gchar *down_xpm[] = {
 static const gchar *draw_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "         ...    ",
 "         ....   ",
 "        .  .    ",
@@ -113,7 +113,7 @@ static const gchar *draw_xpm[] = {
 static const gchar *dright_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "       .        ",
@@ -135,7 +135,7 @@ static const gchar *dright_xpm[] = {
 static const gchar *fliph_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "       ..       ",
 "       ..       ",
@@ -157,7 +157,7 @@ static const gchar *fliph_xpm[] = {
 static const gchar *flipv_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "    ........    ",
 "    .      .    ",
@@ -179,7 +179,7 @@ static const gchar *flipv_xpm[] = {
 static const gchar *left_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "        ..      ",
 "       ...      ",
@@ -201,7 +201,7 @@ static const gchar *left_xpm[] = {
 static const gchar *move_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "..  ..  ..  ..  ",
 ".            .  ",
 "  ..............",
@@ -223,7 +223,7 @@ static const gchar *move_xpm[] = {
 static const gchar *right_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "      ..        ",
 "      ...       ",
@@ -245,7 +245,7 @@ static const gchar *right_xpm[] = {
 static const gchar *rleft_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "     ..         ",
@@ -267,7 +267,7 @@ static const gchar *rleft_xpm[] = {
 static const gchar *rotate_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "     ......     ",
@@ -289,7 +289,7 @@ static const gchar *rotate_xpm[] = {
 static const gchar *rright_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "         ..     ",
@@ -311,7 +311,7 @@ static const gchar *rright_xpm[] = {
 static const gchar *shear_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "   .            ",
 "   .            ",
@@ -333,7 +333,7 @@ static const gchar *shear_xpm[] = {
 static const gchar *uleft_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "  .........     ",
@@ -355,7 +355,7 @@ static const gchar *uleft_xpm[] = {
 static const gchar *up_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "       ..       ",
@@ -377,7 +377,7 @@ static const gchar *up_xpm[] = {
 static const gchar *uright_xpm[] = {
 "16 16 2 1",
 "  c None",
-". c black",
+". c #E8E2C0",
 "                ",
 "                ",
 "     .........  ",

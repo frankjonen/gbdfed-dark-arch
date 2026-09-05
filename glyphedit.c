@@ -52,7 +52,7 @@
 static const gchar *cross_xpm[] = {
 "13 13 2 1",
 " 	c None",
-".	c #000000",
+".	c #E8E2C0",
 "      .      ",
 "      .      ",
 "      .      ",
@@ -398,11 +398,9 @@ glyphedit_draw_pixel(Glyphedit *gw, gint16 x, gint16 y, gboolean sel)
             cairo_set_source_rgb(cr, color, color, color);
         } else {
 #if GTK_CHECK_VERSION(3, 0, 0)
-            GtkStyleContext *context = gtk_widget_get_style_context(GTK_WIDGET(gw));
-            gtk_style_context_get_color(context, GTK_STATE_FLAG_NORMAL, &gw->baselineColor);
-            gdk_cairo_set_source_rgba(cr, &gw->baselineColor);
+    gdk_cairo_set_source_rgba(cr, &gw->glyphColor);
 #else
-            gdk_cairo_set_source_color(cr, &gw->baselineColor);
+    gdk_cairo_set_source_color(cr, &gw->glyphColor);
 #endif
         }
 
@@ -826,14 +824,15 @@ glyphedit_init(GTypeInstance *obj, gpointer g_class)
 
 #if GTK_CHECK_VERSION(3, 0, 0)
     /* TODO: for some reason the same code as below doesn't work in _init() */
-    GtkStyleContext *context = gtk_widget_get_style_context(GTK_WIDGET(gw));
-    gtk_style_context_get_color(context, GTK_STATE_FLAG_NORMAL, &gw->baselineColor);
-    gtk_style_context_get_background_color(context, GTK_STATE_FLAG_SELECTED, &gw->selectionColor);
-    gdk_rgba_parse(&gw->boundsColor, "#ff0000");
+    gdk_rgba_parse(&gw->baselineColor, "#E6B849");
+    gdk_rgba_parse(&gw->glyphColor, "#E8E2C0");
+    gdk_rgba_parse(&gw->selectionColor, "#5A4930");
+    gdk_rgba_parse(&gw->boundsColor, "#D65A4A");
 #else
-    gw->baselineColor = gtk_widget_get_style(GTK_WIDGET(gw))->fg[GTK_STATE_NORMAL];
-    gw->selectionColor = gtk_widget_get_style(GTK_WIDGET(gw))->bg[GTK_STATE_SELECTED];
-    gdk_color_parse("#ff0000", &gw->boundsColor);
+    gdk_color_parse("#E6B849", &gw->baselineColor);
+    gdk_color_parse("#E8E2C0", &gw->glyphColor);
+    gdk_color_parse("#5A4930", &gw->selectionColor);
+    gdk_color_parse("#D65A4A", &gw->boundsColor);
 #endif
 
     /*
